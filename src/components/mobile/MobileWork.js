@@ -10,7 +10,7 @@ function MobileWork({ handleResumeClick, handleHomeClick, handleMailLink }) {
        const featuredProjects = [
         {
             name: "Obade App",
-            tools: `REACT`,
+            tools: `REACT + REACT BOOTSTRAP`,
             description: "airtime vending app with cashback feature",
             githubLink: "https://github.com/dea1j",
             isProjectLive: true,
@@ -18,11 +18,10 @@ function MobileWork({ handleResumeClick, handleHomeClick, handleMailLink }) {
         },
     ]
 
-    // Other projects array
     const otherProjects = [
         {
             name: "AMPZ Sports",
-            tools: `Gatsby Js`,
+            tools: `GATSBY JS + BOOTSTRAP`,
             description: "Redesign and develop the company’s web-based application",
             githubLink: "https://github.com/dea1j",
             isProjectLive: true,
@@ -31,7 +30,7 @@ function MobileWork({ handleResumeClick, handleHomeClick, handleMailLink }) {
 
         {
             name: "ZLogistics",
-            tools: `React, Graphql`,
+            tools: `REACT + GRAPHQL`,
             description: "Zardan Logistics app",
             githubLink: "https://github.com/dea1j",
             isProjectLive: true,
@@ -49,7 +48,7 @@ function MobileWork({ handleResumeClick, handleHomeClick, handleMailLink }) {
                 <div className="projects">
                     {/* Mapping all the projects in the array out */}
                     {featuredProjects.map((project, i) => (
-                        <div key={i} className={`elem-${i} project border-button w-11/12 py-6 px-10 mb-8`}>
+                        <div key={i} className={`project border-button w-11/12 py-6 px-10 mb-8`}>
                             <div className="project-name text-opacity-90 text-2xl xl:text-3xl pb-1.5">
                                 {project.name}
                             </div>
@@ -85,7 +84,7 @@ function MobileWork({ handleResumeClick, handleHomeClick, handleMailLink }) {
                 <div className="projects">
                     {/* Mapping all the projects in the array out */}
                     {otherProjects.map((project, i) => (
-                        <div key={i} className={`elem-${i} project border-button w-11/12 py-6 px-10 mb-8`}>
+                        <div key={i} className={`project border-button w-11/12 py-6 px-10 mb-8`}>
                             <div className="project-name text-opacity-90 text-2xl xl:text-3xl pb-1.5">
                                 {project.name}
                             </div>

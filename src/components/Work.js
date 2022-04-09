@@ -8,32 +8,21 @@ import eyeIcon from "../assets/img/eye-icon.svg";
 import githubAvatar from "../assets/img/github-avatar.svg";
 
 function Work() {
-    // Featured projects array
     const featuredProjects = [
         {
             name: "Obade App",
-            tools: `REACT`,
-            description: "airtime vending app with cashback feature",
+            tools: `REACT + REACT BOOTSTRAP`,
+            description: "An airtime vending app with cashback feature",
             githubLink: "https://github.com/dea1j",
             isProjectLive: true,
             projectLink: "https://app.obade.org",
         },
-
-        // {
-        //     name: "Plug App Page",
-        //     tools: `REACT`,
-        //     description: "A landing page for a mobile app",
-        //     githubLink: "https://github.com/Dahnie/plug-landing-page",
-        //     isProjectLive: true,
-        //     projectLink: "https://plug-app.netlify.app",
-        // }
     ]
 
-    // Other projects array
     const otherProjects = [
         {
             name: "AMPZ Sports",
-            tools: `Gatsby Js`,
+            tools: `GATSBY JS + BOOTSTRAP`,
             description: "Redesign and develop the company’s web-based application",
             githubLink: "https://github.com/dea1j",
             isProjectLive: true,
@@ -42,7 +31,7 @@ function Work() {
 
         {
             name: "ZLogistics",
-            tools: `React, Graphql`,
+            tools: `REACT + GRAPHQL`,
             description: "Zardan Logistics app",
             githubLink: "https://github.com/dea1j",
             isProjectLive: true,
@@ -147,7 +136,7 @@ function Work() {
                 <div ref={el => { featuredProjectsRef = el }} className="projects">
                     {/* Mapping all the projects in the array out */}
                     {featuredProjects.map((project, i) => (
-                        <div key={i} className={`elem-${i} border-button w-11/12 py-6 px-10 mb-2.5 cursor-pointer`}>
+                        <div key={i} className={`border-button w-11/12 py-6 px-10 mb-2.5 cursor-pointer`}>
                             <div className="project-name text-opacity-90 text-2xl xl:text-3xl pb-1.5">
                                 {project.name}
                             </div>
@@ -158,13 +147,10 @@ function Work() {
                                 {project.description}
                             </div>
                             <div className="project-links flex lg:text-xs 2xl:text-sm text-opacity-60 ">
-                                {/* Used ancchor tags because of external link, check if solution to v6 external routing exists later */}
                                 <a href={project.githubLink} className="github-link flex pr-4">
                                     <img className="relative -top-0.5" src={githubAvatar} alt="github-icon" />
                                     <p className="px-1">Code</p>
                                 </a>
-                                {/* Used ancchor tags because of external link, check if solution to v6 external routing exists later */}
-
                                 {project.isProjectLive &&
                                     (<a href={project.projectLink} target="_blank" className="live-link flex">
                                         <img className="relative -top-0.5" src={eyeIcon} alt="eye-icon" />
@@ -180,17 +166,14 @@ function Work() {
             {/* Other works */}
             <div ref={el => { otherWorksRef = el }} className="other-works my-14 px-14 xl:px-12 4xl:pr-24 5xl:pr-28">
                 <div className="title text-opacity-40 text-sm font-cat-semibold pb-5">OTHERS</div>
-                {/* Mapping all the projects in the array out */}
                 <div className="projects-masonry ">
                     {/* Used react-masonry to create the unbalanced effect on the grid */}
                     <Masonry
                         breakpointCols={2}
                         className="my-masonry-grid"
                         columnClassName="my-masonry-grid_column">
-                        {/* array of JSX items */}
                         {otherProjects.map((project, i) => (
-                            
-                            <div key={i} alt={i} className={`other-projects-${i} border-button  py-10 lg:px-5 xl:px-8 cursor-pointer`}>
+                            <div key={i} alt={i} className={`border-button  py-10 lg:px-5 xl:px-8 cursor-pointer`}>
                                 <div className="project-name text-opacity-90 text-2xl xl:text-3xl pb-3">
                                     {project.name}
                                 </div>
