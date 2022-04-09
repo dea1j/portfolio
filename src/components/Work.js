@@ -152,7 +152,7 @@ function Work() {
                                     <p className="px-1">Code</p>
                                 </a>
                                 {project.isProjectLive &&
-                                    (<a href={project.projectLink} target="_blank" className="live-link flex">
+                                    (<a href={project.projectLink} target="_blank" rel="noreferrer" className="live-link flex">
                                         <img className="relative -top-0.5" src={eyeIcon} alt="eye-icon" />
                                         <p className="px-1">View project</p>
                                     </a>)
@@ -191,7 +191,7 @@ function Work() {
                                     </a>
                                     {/* Live */}
                                     {project.isProjectLive &&
-                                        (<a href={project.projectLink} target="_blank" className="live-link flex items-center">
+                                        (<a href={project.projectLink} target="_blank" rel="noreferrer" className="live-link flex items-center">
                                             <img className="relative lg:h-4 xl:h-max xl:-top-0.5" src={eyeIcon} alt="eye-icon" />
                                             <p className="px-1">View project</p>
                                         </a>)

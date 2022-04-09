@@ -13,8 +13,6 @@ import arrowUp from "../assets/img/arrow-up.svg";
 import MobileHome from './mobile/MobileHome';
 
 
-
-
 function Home() {
     const [page, setPage] = useState("Work")  // State that handles the dynamic web page routing    
     const [mobilePage, setMobilePage] = useState("Home")  // State that handles the dynamic mobile page routing while respecting the web state
@@ -23,8 +21,6 @@ function Home() {
     let location = useLocation()
     
     //  Refs
-    const resumeRef = useRef(null)
-    // Refs for animations using gsap
     let introductionRef = useRef(null)
     let webcontainerRef = useRef(null)
     let briefbioRef = useRef(null)
@@ -51,7 +47,7 @@ function Home() {
     }
 
     // Function that checks the value of route to determine page and handle effect
-    const handlePageChangeOnRouteChange = function () {
+    const handlePageChangeOnRouteChange = () => {
         if (location.pathname === "/") {
             setPage("Work")
             setMobilePage("Home")
@@ -62,7 +58,6 @@ function Home() {
 
     useEffect(() => {
         let wave = document.querySelector(".wave")
-
         tl
             .from(".number", { duration: 1, opacity: 0, x: 2 })
         setInterval(() => {
@@ -70,9 +65,7 @@ function Home() {
                 .to(wave, { duration: 1, x: 0 })
                 .to(wave, { duration: 5, x: 10, ease: "easeOut", delay: .2 })
             }, 5000)
-    }, [])
-
-
+    }, [tl])
 
     // adds the hover event listenerr on the menu navigation
     useEffect(() => {
@@ -105,9 +98,7 @@ function Home() {
     // The useEffect is dependent on change of the browwser location(pathname)
     useEffect(() => {
         handlePageChangeOnRouteChange()
-    }, [location])
-
-
+    }, [handlePageChangeOnRouteChange])
 
 
     return (
@@ -136,7 +127,7 @@ function Home() {
                         <div ref={el => { appNavigationRef = el }} className="app-navigation pt-10">
                             {/* Resume Link */}
                             <div className="menu-nav resume-nav flex cursor-pointer my-5 text-opacity-60 w-56 items-center">
-                                <a href='https://docs.google.com/document/d/1_vUGVAEHv_wWVQk00zn0WLBO2zBuPzJA/edit?usp=sharing&ouid=115225426569719419972&rtpof=true&sd=true' target='_blank' className="menu-nav resume-nav flex cursor-pointer my-5 text-opacity-60 w-56 items-center">
+                                <a href='https://docs.google.com/document/d/1_vUGVAEHv_wWVQk00zn0WLBO2zBuPzJA/edit?usp=sharing&ouid=115225426569719419972&rtpof=true&sd=true' target='_blank' rel="noreferrer" className="menu-nav resume-nav flex cursor-pointer my-5 text-opacity-60 w-56 items-center">
                                     <div className="">01</div>
                                     <div className="line mx-3">
                                         <div className="default-line work-line" style={{ height: "1px", width: "54px", backgroundColor: "#1b1b1d", opacity: "0.5" }}></div>

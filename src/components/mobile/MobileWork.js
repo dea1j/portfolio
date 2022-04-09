@@ -119,7 +119,7 @@ function MobileWork({ handleResumeClick, handleHomeClick, handleMailLink }) {
                         Home
                     </button>
                 </div>
-                <a href='https://docs.google.com/document/d/1_vUGVAEHv_wWVQk00zn0WLBO2zBuPzJA/edit?usp=sharing&ouid=115225426569719419972&rtpof=true&sd=true' target='_blank' className="nav-btn pl-2">
+                <a href='https://docs.google.com/document/d/1_vUGVAEHv_wWVQk00zn0WLBO2zBuPzJA/edit?usp=sharing&ouid=115225426569719419972&rtpof=true&sd=true' target='_blank' rel="noreferrer" className="nav-btn pl-2">
                     <button className='resume-btn border-button w-32 md:w-56 px-3 py-2'>
                         Resume
                     </button>

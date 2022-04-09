@@ -1,12 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import { Link, useNavigate, useLocation } from "react-router-dom"
 import { gsap } from "gsap"
-import profileImg from "../../assets/img/profile-img.png";
 import githubAvatar from "../../assets/img/github-avatar.svg";
 import mailAvatar from "../../assets/img/mail-avatar.svg";
 import twitterAvatar from "../../assets/img/twitter-avatar.svg";
 import linkedinAvatar from "../../assets/img/linkedin-avatar.svg";
-import navClose from "../../assets/img/nav-close.svg";
 import navLine from "../../assets/img/nav-line.svg";
 import navBurger from "../../assets/img/nav-burger.svg";
 import rightArrow from "../../assets/img/right-arrow.svg"
@@ -173,7 +171,7 @@ function MobileHome({ page, setPage, mobilePage, setMobilePage, handleWorkRouteB
 
                         {/* Nav resume */}
                         <div className='nav-resume w-max mb-3 px-10 py-3 text-2xl text-opacity-60'>
-                            <a href='https://docs.google.com/document/d/1_vUGVAEHv_wWVQk00zn0WLBO2zBuPzJA/edit?usp=sharing&ouid=115225426569719419972&rtpof=true&sd=true' target='_blank'  className='nav-resume w-max mb-3 px-10 py-3 text-2xl text-opacity-60'>
+                            <a href='https://docs.google.com/document/d/1_vUGVAEHv_wWVQk00zn0WLBO2zBuPzJA/edit?usp=sharing&ouid=115225426569719419972&rtpof=true&sd=true' target='_blank' rel="noreferrer" className='nav-resume w-max mb-3 px-10 py-3 text-2xl text-opacity-60'>
                                 Resume
                             </a>
                         </div>
