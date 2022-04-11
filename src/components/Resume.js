@@ -28,7 +28,7 @@ function Resume({ handleWorkRouteButton }) {
                         <div className='name-inner font-cat-medium text-white text-opacity-90 text-5xl '>
                             Dayo James
                         </div>
-                        <a href="https://www.linkedin.com/in/james-dayo-77ba20111" className='linkedin-link flex justify-end items-center pr-2'>
+                        <a href="https://www.linkedin.com/in/dayo-james-77ba20111" className='linkedin-link flex justify-end items-center pr-2'>
                             <img className='h-8' src={linkedinAvatar} alt="linkedin" />
                         </a>
                     </div>

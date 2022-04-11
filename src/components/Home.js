@@ -147,7 +147,7 @@ function Home() {
                                 <img src={arrowUp} alt="arrow-up" />
                             </a>
                             {/* Linkedin */}
-                            <a href='https://www.linkedin.com/in/james-dayo-77ba20111' ref={el => { linkedinLinkRef = el }} className="social-twitter flex items-center mx-2 font-cat-medium cursor-pointer hover:text-opacity-100 hover:transition-all">
+                            <a href='https://www.linkedin.com/in/dayo-james-77ba20111' target="_blank" ref={el => { linkedinLinkRef = el }} className="social-twitter flex items-center mx-2 font-cat-medium cursor-pointer hover:text-opacity-100 hover:transition-all">
                                 <img className="social-mail flex items-center mx-2 font-cat-medium cursor-pointer hover:text-opacity-100 hover:transition-all" src={linkedinAvatar} alt="linkedin" />
                                 <p className="px-1.5">LinkedIn</p>
                                 <img src={arrowUp} alt="arrow-up" />

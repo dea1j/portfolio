@@ -147,7 +147,7 @@ function Work() {
                                 {project.description}
                             </div>
                             <div className="project-links flex lg:text-xs 2xl:text-sm text-opacity-60 ">
-                                <a href={project.githubLink} className="github-link flex pr-4">
+                                <a href={project.githubLink} target="_blank" className="github-link flex pr-4">
                                     <img className="relative -top-0.5" src={githubAvatar} alt="github-icon" />
                                     <p className="px-1">Code</p>
                                 </a>
@@ -185,7 +185,7 @@ function Work() {
                                 </div>
                                 <div className="project-links flex lg:text-xs 2xl:text-sm text-opacity-60 pt-12 pb-2">
                                     {/* Github */}
-                                    <a href={project.githubLink} className="github-link flex items-center pr-2.5 xl:pr-4">
+                                    <a href={project.githubLink} target="_blank" className="github-link flex items-center pr-2.5 xl:pr-4">
                                         <img className="relative lg:h-4 xl:h-max xl:-top-0.5" src={githubAvatar} alt="github-icon" />
                                         <p className="px-1">Code</p>
                                     </a>

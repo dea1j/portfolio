@@ -189,7 +189,7 @@ function MobileHome({ page, setPage, mobilePage, setMobilePage, handleWorkRouteB
                         <div className="social-links flex px-3 py-2 w-max">
                             {/* Github */}
                             {/* Used anchor tags because of external link, check if solution to v6 external routing exists later */}
-                            <a href="https://github.com/dea1j" className="mobile-github-link">
+                            <a href="https://github.com/dea1j" target="_blank" className="mobile-github-link">
                                 <img src={githubAvatar} alt="github" className="h-7" />
                             </a>
 
@@ -200,7 +200,7 @@ function MobileHome({ page, setPage, mobilePage, setMobilePage, handleWorkRouteB
 
                             {/* LinkedIn */}
                             {/* Used anchor tags because of external link, check if solution to v6 external routing exists later */}
-                            <a href="https://www.linkedin.com/in/james-dayo-77ba20111" className="mobile-linkedin-link">
+                            <a href="https://www.linkedin.com/in/dayo-james-77ba20111" target="_blank" className="mobile-linkedin-link">
                                 <img src={linkedinAvatar} alt="linkedin" className="h-7 pr-2 mr-2.5" />
                             </a>
 
@@ -262,7 +262,7 @@ function MobileHome({ page, setPage, mobilePage, setMobilePage, handleWorkRouteB
                                                 {/* social links */}
                                                 <div className="social-links flex px-3 py-2 w-max">
                                                     {/* Github */}
-                                                    <a href="https://github.com/dea1j" className="mobile-github-link">
+                                                    <a href="https://github.com/dea1j" target="_blank" className="mobile-github-link">
                                                         <img src={githubAvatar} alt="github" className="h-7" />
                                                     </a>
                                                     {/* Mail */}
@@ -271,12 +271,12 @@ function MobileHome({ page, setPage, mobilePage, setMobilePage, handleWorkRouteB
                                                     </Link>
                                                     {/* LinkedIn */}
                                                     {/* TODO get the correct avatar */}
-                                                    <a href="https://www.linkedin.com/in/james-dayo-77ba20111" className="mobile-linkedin-link">
+                                                    <a href="https://www.linkedin.com/in/dayo-james-77ba20111" target="_blank" className="mobile-linkedin-link">
                                                         <img src={linkedinAvatar} alt="linkedin" className="h-7 pr-2 mr-6" />
                                                     </a>
                                                     {/* Twitter */}
                                                     {/* TODO Get the correct twitter link */}
-                                                    <a href="https://twitter.com/dea1j" className="mobile-twitter-link">
+                                                    <a href="https://twitter.com/dea1j" target="_blank" className="mobile-twitter-link">
                                                         <img src={twitterAvatar} alt="" className="h-7" />
                                                     </a>
                                                 </div>
