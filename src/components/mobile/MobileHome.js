@@ -171,7 +171,7 @@ function MobileHome({ page, setPage, mobilePage, setMobilePage, handleWorkRouteB
 
                         {/* Nav resume */}
                         <div className='nav-resume w-max mb-3 px-10 py-3 text-2xl text-opacity-60'>
-                            <a href='https://docs.google.com/document/d/1_vUGVAEHv_wWVQk00zn0WLBO2zBuPzJA/edit?usp=sharing&ouid=115225426569719419972&rtpof=true&sd=true' target='_blank' rel="noreferrer" className='nav-resume w-max mb-3 px-10 py-3 text-2xl text-opacity-60'>
+                            <a href='https://drive.google.com/file/d/1F6wwSMcA45nKmnOneK0uUODb3yCenTLz/view?usp=sharing' target='_blank' rel="noreferrer" className='nav-resume w-max mb-3 px-10 py-3 text-2xl text-opacity-60'>
                                 Resume
                             </a>
                         </div>
