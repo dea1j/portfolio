@@ -12,7 +12,7 @@ function Work() {
         {
             name: "Obade App",
             tools: `REACT + REACT BOOTSTRAP`,
-            description: "An airtime vending app with cashback feature",
+            description: "Obade app is an airtime and utility recharge app with an instant cashback feature. Users gets about 10% of the money they spend while recharging airtime and utilities.",
             githubLink: "https://github.com/dea1j",
             isProjectLive: true,
             projectLink: "https://app.obade.org",
@@ -23,7 +23,7 @@ function Work() {
         {
             name: "AMPZ Sports",
             tools: `GATSBY JS + BOOTSTRAP`,
-            description: "Redesign and develop the company’s web-based application",
+            description: "Redesign of AMPZ Sports website to better reflect their product and services to their core audience.",
             githubLink: "https://github.com/dea1j",
             isProjectLive: true,
             projectLink: "https://www.ampzsports.com/"
@@ -32,7 +32,7 @@ function Work() {
         {
             name: "ZLogistics",
             tools: `REACT + GRAPHQL`,
-            description: "Zardan Logistics app",
+            description: "An easy to use logistics application that helps you track the status of your parcels sent easily",
             githubLink: "https://github.com/dea1j",
             isProjectLive: true,
             projectLink: "http://zlogistics-frontend-dev.herokuapp.com/"
