@@ -20,10 +20,6 @@ function MobileHome({ page, setPage, mobilePage, setMobilePage, handleWorkRouteB
     const mobileNavRef = useRef(null);
     const mobileMainRef = useRef(null);
 
-
-
-
-
     // Functions
     // Handle mail link actions
     const handleMailLink = function (e) {
@@ -171,7 +167,7 @@ function MobileHome({ page, setPage, mobilePage, setMobilePage, handleWorkRouteB
 
                         {/* Nav resume */}
                         <div className='nav-resume w-max mb-3 px-10 py-3 text-2xl text-opacity-60'>
-                            <a href='https://drive.google.com/file/d/1F6wwSMcA45nKmnOneK0uUODb3yCenTLz/view?usp=sharing' target='_blank' rel="noreferrer" className='nav-resume w-max mb-3 px-10 py-3 text-2xl text-opacity-60'>
+                            <a href='https://drive.google.com/file/d/1cADYevSLERYRua_P3U4szz3-H_3VbvYF/view?usp=sharing' target='_blank' rel="noreferrer" className='nav-resume w-max mb-3 px-10 py-3 text-2xl text-opacity-60'>
                                 Resume
                             </a>
                         </div>
