@@ -56,17 +56,6 @@ function Home() {
         }
     }
 
-    useEffect(() => {
-        let wave = document.querySelector(".wave")
-        tl
-            .from(".number", { duration: 1, opacity: 0, x: 2 })
-        setInterval(() => {
-            tl
-                .to(wave, { duration: 1, x: 0 })
-                .to(wave, { duration: 5, x: 10, ease: "easeOut", delay: .2 })
-            }, 5000)
-    }, [tl])
-
     // adds the hover event listenerr on the menu navigation
     useEffect(() => {
         // WORK HANDLERS START
@@ -127,12 +116,9 @@ function Home() {
                         <div ref={el => { appNavigationRef = el }} className="app-navigation pt-10">
                             {/* Resume Link */}
                             <div className="menu-nav resume-nav flex cursor-pointer my-5 text-opacity-60 w-56 items-center">
-                                <a href='https://drive.google.com/file/d/1cADYevSLERYRua_P3U4szz3-H_3VbvYF/view?usp=sharing' target='_blank' rel="noreferrer" className="menu-nav resume-nav flex cursor-pointer my-5 text-opacity-60 w-56 items-center">
-                                    <div className="">01</div>
-                                    <div className="line mx-3">
-                                        <div className="default-line work-line" style={{ height: "1px", width: "54px", backgroundColor: "#1b1b1d", opacity: "0.5" }}></div>
-                                    </div>
-                                    <span>RESUME</span>
+                                <a href='https://drive.google.com/file/d/1kZpOOc9wp9BaAdgqZfZcHDr8qEUlvYUS/view?usp=sharing' target='_blank' rel="noreferrer" className="menu-nav resume-nav flex cursor-pointer my-5 text-opacity-60 w-56 items-center">
+                                    <div className="default-line work-line" style={{ height: "1px", width: "54px", backgroundColor: "#1b1b1d", opacity: "0.5" }}></div>
+                                    <span className='ml-2'>RESUME</span>
                                 </a>
                             </div>
                         </div>
