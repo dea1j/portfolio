@@ -134,16 +134,19 @@ function MobileHome({ page, setPage, mobilePage, setMobilePage, handleWorkRouteB
             {/* Navigation */}
             <div ref={mobileNavRef} className="mobile-nav hidden h-screen relative overflow-hidden">
                 {/* Close */}
+                {/* <div className="nav-option flex"> */}
                 <div className="nav-option flex"  style={{backgroundColor: 'black'}}>
                     <div className="nickname flex justify-end py-5 px-4 md:px-10 text-3xl text-opacity-90 font-cat-medium">
                         <p>dayo</p>
                     </div>
 
                     <div className="nav-option-inner w-full flex justify-end py-5 px-3 md:px-10">
-                        <div className="nav-close">
-                            <img className='nav-close-up mb-3 px-3 opacity-0' src={navLine} alt="cancel" style={{ transformOrigin: "left" }} />
-                            <img className='nav-close-down my-7 absolute px-3 opacity-0' src={navLine} alt="cancel" style={{ transformOrigin: "left" }} />
-                        </div>
+                        {/* <button style={{backgroundColor: 'black'}}> */}
+                            <div className="nav-close">
+                                <img className='nav-close-up mb-3 px-3 opacity-0' src={navLine} alt="cancel" style={{ transformOrigin: "left" }} />
+                                <img className='nav-close-down my-7 absolute px-3 opacity-0' src={navLine} alt="cancel" style={{ transformOrigin: "left" }} />
+                            </div>
+                        {/* </button> */}
 
                     </div>
                 </div>
@@ -213,13 +216,16 @@ function MobileHome({ page, setPage, mobilePage, setMobilePage, handleWorkRouteB
             {/* Main Content */}
             <div ref={mobileMainRef} className={`mobile-main-content h-screen ${mobilePage === "Home" ? "overflow-hidden" : "overflow-auto"}`}>
                 {/* Open */}
-                <div className="nav-option flex" style={{backgroundColor: 'black'}}>
+                <div className="nav-option flex">
+                {/* <div className="nav-option flex" style={{backgroundColor: 'black'}}> */}
                     <div className="nickname flex justify-end py-5 px-4 md:px-10 text-3xl text-opacity-90 font-cat-medium">
                         <p></p>
                     </div>
 
                     <div className="nav-option-inner w-full flex justify-end py-5 px-3 md:px-10">
-                        <img className='nav-open py-3 px-3' src={navBurger} alt="open" />
+                        <button style={{backgroundColor: 'black', borderRadius: '50%',width: '50px', height: '50px'}}>
+                            <img className='nav-open py-3 px-3' src={navBurger} alt="open" />
+                        </button>
                     </div>
                 </div>
 
