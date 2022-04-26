@@ -105,9 +105,9 @@
   visibility: hidden;
 }
 
-div[alt="1"] {
+/* div[alt="1"] {
   margin-top: 22px;
-}
+} */
 
 #work-section::-webkit-scrollbar,
 #resume-section::-webkit-scrollbar {

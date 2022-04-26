@@ -29,3 +29,13 @@
     6px 8px 8px -1px rgb(15, 15, 15, 0.5);
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  gap: 20px 20px;
+}
+.grid-item {
+  padding: 20px;
+  border: 1px solid #000;
+}

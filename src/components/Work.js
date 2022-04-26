@@ -172,6 +172,7 @@ function Work() {
                         breakpointCols={2}
                         className="my-masonry-grid"
                         columnClassName="my-masonry-grid_column">
+                            {/* <div className="grid-container"> */}
                         {otherProjects.map((project, i) => (
                             <div key={i} alt={i} className={`border-button  py-10 lg:px-5 xl:px-8 cursor-pointer`}>
                                 <div className="project-name text-opacity-90 text-2xl xl:text-3xl pb-3">
@@ -199,6 +200,7 @@ function Work() {
                                 </div>
                             </div>
                         ))}
+                        {/* </div> */}
                     </Masonry>
                 </div>
             </div >
