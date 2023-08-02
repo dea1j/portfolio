@@ -116,7 +116,7 @@ function Home() {
                         <div ref={el => { appNavigationRef = el }} className="app-navigation pt-10">
                             {/* Resume Link */}
                             <div className="menu-nav resume-nav flex cursor-pointer my-5 text-opacity-60 w-56 items-center">
-                                <a href='https://drive.google.com/file/d/1kZpOOc9wp9BaAdgqZfZcHDr8qEUlvYUS/view?usp=sharing' target='_blank' rel="noreferrer" className="menu-nav resume-nav flex cursor-pointer my-5 text-opacity-60 w-56 items-center">
+                                <a href='https://drive.google.com/file/d/1cHARto6KncAIS8ArVOgh5fy3C4vU87-R/view?usp=sharing' target='_blank' rel="noreferrer" className="menu-nav resume-nav flex cursor-pointer my-5 text-opacity-60 w-56 items-center">
                                     <div className="default-line work-line" style={{ height: "1px", width: "54px", backgroundColor: "#1b1b1d", opacity: "0.5" }}></div>
                                     <span className='ml-2'>RESUME</span>
                                 </a>
